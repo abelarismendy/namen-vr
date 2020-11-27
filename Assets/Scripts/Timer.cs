@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     public float rateCrecimiento;
     public float timeRemaining = 10;
     public int maxTime;
-    public TextMeshPro contador;
+    public TextMeshProUGUI contador;
     public bool inhalo;
     public bool centinela;
 
@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
 
             else if ((timeRemaining < maxTime) & (timeRemaining >= maxTime-2) & (inhalo == false))
         {
-            contador.text = "Mantenga la respiracion";
+            contador.text = "Mantenga la respiración";
 
             if (timeRemaining <= maxTime & (centinela == false))
             {
