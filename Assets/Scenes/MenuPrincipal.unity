@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 341145985}
   - component: {fileID: 341145984}
   - component: {fileID: 341145983}
+  - component: {fileID: 341145989}
   - component: {fileID: 341145986}
   - component: {fileID: 341145987}
   - component: {fileID: 341145988}
@@ -586,6 +587,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gazetime: 2
   button: {fileID: 0}
+--- !u!114 &341145989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341145981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd652e064d8ee47b049d800b0b214b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &395266119
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +882,7 @@ GameObject:
   - component: {fileID: 690092155}
   - component: {fileID: 690092154}
   - component: {fileID: 690092153}
+  - component: {fileID: 690092159}
   - component: {fileID: 690092156}
   - component: {fileID: 690092158}
   - component: {fileID: 690092157}
@@ -941,7 +955,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 690092154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 690092159}
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mundo1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &690092154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,6 +1090,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gazetime: 2
   button: {fileID: 0}
+--- !u!114 &690092159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690092151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd652e064d8ee47b049d800b0b214b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &697649723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1236,7 @@ GameObject:
   - component: {fileID: 736006833}
   - component: {fileID: 736006832}
   - component: {fileID: 736006831}
+  - component: {fileID: 736006837}
   - component: {fileID: 736006834}
   - component: {fileID: 736006835}
   - component: {fileID: 736006836}
@@ -1271,7 +1309,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 736006832}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736006837}
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mundo3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &736006832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,6 +1444,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &736006837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736006829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd652e064d8ee47b049d800b0b214b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &763726467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1632,7 @@ GameObject:
   - component: {fileID: 1136094946}
   - component: {fileID: 1136094945}
   - component: {fileID: 1136094944}
+  - component: {fileID: 1136094950}
   - component: {fileID: 1136094947}
   - component: {fileID: 1136094948}
   - component: {fileID: 1136094949}
@@ -1643,7 +1705,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1136094945}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1136094950}
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mundo2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1136094945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,6 +1840,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1136094950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136094942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd652e064d8ee47b049d800b0b214b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1255429304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,7 +2389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319839405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 557, y: 250, z: -500}
+  m_LocalPosition: {x: 557, y: 300, z: -600}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1255429305}

@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Gaze : MonoBehaviour
 {
-    public float gazetime = 2f;
+    public float gazetime = 3f;
     private float timer;
     private bool gazed;
     public Button button;
@@ -29,17 +29,14 @@ public class Gaze : MonoBehaviour
 
     public void PointerEnter() {
         gazed = true;
-        Debug.Log(1);
     }
 
     public void PointerExit() {
         gazed = false;
-        Debug.Log(2);
     }
 
     public void PointerDown() {
         button = GetComponent<Button>();
         ExecuteEvents.Execute(button.gameObject, new BaseEventData(EventSystem.current), ExecuteEvents.submitHandler);
-        Debug.Log("Press");
     }
 }
