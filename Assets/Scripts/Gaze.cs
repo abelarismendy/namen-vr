@@ -8,6 +8,7 @@ public class Gaze : MonoBehaviour
     public float gazetime = 2f;
     private float timer;
     private bool gazed;
+    public Button button;
     // Start is called before the first frame update
     void Start() {
         
@@ -31,9 +32,5 @@ public class Gaze : MonoBehaviour
 
     public void PointerExit() {
         gazed = false;
-    }
-
-    public void PointerDown() {
-
     }
 }
