@@ -12,6 +12,7 @@ PluginImporter:
   validateReferences: 1
   platformData:
   - first:
+      Any: 
     second:
       enabled: 1
       settings: {}
