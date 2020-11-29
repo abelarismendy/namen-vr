@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
 
             else if ((timeRemaining < maxTime) & (timeRemaining >= maxTime-2) & (inhalo == false))
         {
-            contador.text = "Mantenga la respiración";
+            contador.text = "Mantén";
 
             if (timeRemaining <= maxTime & (centinela == false))
             {
