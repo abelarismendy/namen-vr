@@ -8,16 +8,15 @@ public class Timer : MonoBehaviour
 
 {
     public float rateCrecimiento;
-    public float timeRemaining = 10;
+    private float timeRemaining;
     public int maxTime;
     public TextMeshProUGUI contador;
-    public bool inhalo;
-    public bool centinela;
+    private bool inhalo;
+    private bool centinela;
 
     void Start()
         {
-            timeRemaining = 0;
-            rateCrecimiento = .2f;
+            timeRemaining = 0.0f;
             inhalo = false;
             centinela = false;
         }
