@@ -6076,7 +6076,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: -1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -13133,7 +13133,7 @@ MonoBehaviour:
   visualizeFocus: 0
   focalLength: 20
   focalSize: 2
-  aperture: 0.74
+  aperture: 0.5
   focalTransform: {fileID: 0}
   maxBlurSize: 1.31
   highResolution: 0
@@ -18188,15 +18188,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2c232ab8238194125bd35d1661c1272e, type: 2}
+  m_sharedMaterial: {fileID: 5622933998060661945, guid: 2c232ab8238194125bd35d1661c1272e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4286054430
+  m_fontColor: {r: 0.11861594, g: 0, b: 0.4716981, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -23499,7 +23500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f758644b1dd3b4fd5b3ea59687ff0fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rateCrecimiento: 0.2
+  rateCrecimiento: 0.15
   maxTime: 8
   contador: {fileID: 1645455891}
 --- !u!135 &2129092700
