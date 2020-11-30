@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     private float tiempoInicial;
     public int maxTime;
     public TextMeshProUGUI contador;
+    public GameObject salirBoton;
     private bool inhalo;
     private bool centinela;
     private bool respirar;
@@ -32,6 +33,7 @@ public class Timer : MonoBehaviour
             contador.text = "";
         }
         tiemposIntercaladosRespaldo = tiemposIntercalados;
+        salirBoton.SetActive(false);
     }
 
     void Update()
@@ -57,16 +59,17 @@ public class Timer : MonoBehaviour
 
         }
         if (finished){
-            contador.text = "Volviendo al menu...";
-            timeRemaining -= Time.deltaTime;
+
             if (timeRemaining <= 0.0f){
                 tiemposIntercalados = tiemposIntercaladosRespaldo;
                 timeRemaining = 0.0f;
                 inhalo = false;
                 centinela = false;
                 respirar = false;
-                finished = false;
-                SceneManager.LoadScene("MenuPrincipal");
+                salirBoton.SetActive(true);
+            }
+            else {
+                timeRemaining -= Time.deltaTime;
             }
         }
         if (respirar){
