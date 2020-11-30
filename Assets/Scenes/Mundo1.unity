@@ -23802,7 +23802,7 @@ MonoBehaviour:
   maxTime: 8
   contador: {fileID: 1645455891}
   tiemposIntercalados:
-  - 2
+  - 87
   - 16
   - 10
   - 16

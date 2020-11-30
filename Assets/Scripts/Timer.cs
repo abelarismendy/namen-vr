@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        print(tiemposIntercalados[0]);
+        print(Time.time - tiempoInicial);
         if (Time.time - tiempoInicial >= tiemposIntercalados[0] & !finished){
             if (tiemposIntercalados.Count > 1){
                 tiempoInicial += tiemposIntercalados[0];
