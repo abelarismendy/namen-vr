@@ -14,6 +14,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    public void SalirAlMenu(){
+        ChangeScene("MenuPrincipal");
+    }
+
     public void OpenInfoPanel ()
     {
         panelInfo.SetActive(true);
