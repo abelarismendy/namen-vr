@@ -6226,8 +6226,8 @@ MonoBehaviour:
   tiemposIntercalados:
   - 88
   - 41
-  - 10.5
-  - 40.5
+  - 10.9
+  - 40.1
 --- !u!135 &1295515133
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6638,7 +6638,7 @@ MonoBehaviour:
   visualizeFocus: 0
   focalLength: 20
   focalSize: 2
-  aperture: 0.74
+  aperture: 0.5
   focalTransform: {fileID: 0}
   maxBlurSize: 1.31
   highResolution: 0

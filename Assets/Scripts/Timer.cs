@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
     private bool finished;
     public List<float> tiemposIntercalados;
     private int i = 0;
+    private List<float> tiemposIntercaladosRespaldo;
     void Start()
     {
         timeRemaining = 0.0f;
@@ -26,15 +27,16 @@ public class Timer : MonoBehaviour
         inhalo = false;
         centinela = false;
         respirar = false;
+        finished = false;
         if (!respirar) {
             contador.text = "";
         }
-
+        tiemposIntercaladosRespaldo = tiemposIntercalados;
     }
 
     void Update()
     {
-        print(timeRemaining);
+
         if (Time.time - tiempoInicial >= tiemposIntercalados[0] & !finished){
             if (tiemposIntercalados.Count > 1){
                 tiempoInicial += tiemposIntercalados[0];
@@ -42,6 +44,8 @@ public class Timer : MonoBehaviour
             }
             else {
                 finished = true;
+                respirar = false;
+                timeRemaining = 2.0f;
             }
             if (i % 2 == 0){
                 respirar = true;
@@ -53,7 +57,17 @@ public class Timer : MonoBehaviour
 
         }
         if (finished){
-            print("Finalizado");
+            contador.text = "Volviendo al menu...";
+            timeRemaining -= Time.deltaTime;
+            if (timeRemaining <= 0.0f){
+                tiemposIntercalados = tiemposIntercaladosRespaldo;
+                timeRemaining = 0.0f;
+                inhalo = false;
+                centinela = false;
+                respirar = false;
+                finished = false;
+                SceneManager.LoadScene("MenuPrincipal");
+            }
         }
         if (respirar){
             if (timeRemaining < (maxTime-2) & (inhalo==false))
@@ -61,6 +75,9 @@ public class Timer : MonoBehaviour
                 rateCrecimiento = Mathf.Abs(rateCrecimiento);
                 timeRemaining += Time.deltaTime;
                 contador.text = "Inhala";
+                if (Time.time - tiempoInicial + 2.0f >= tiemposIntercalados[0]){
+                    contador.text = "";
+                }
 
                changeSize();
             }
