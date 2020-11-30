@@ -1765,7 +1765,7 @@ MonoBehaviour:
   visualizeFocus: 0
   focalLength: 20
   focalSize: 2
-  aperture: 0.5
+  aperture: 0.4
   focalTransform: {fileID: 0}
   maxBlurSize: 1.31
   highResolution: 0
