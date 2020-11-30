@@ -59,17 +59,17 @@ public class Timer : MonoBehaviour
 
         }
         if (finished){
-            contador.text = "Volviendo al menu...";
-            timeRemaining -= Time.deltaTime;
+
             if (timeRemaining <= 0.0f){
                 tiemposIntercalados = tiemposIntercaladosRespaldo;
                 timeRemaining = 0.0f;
                 inhalo = false;
                 centinela = false;
                 respirar = false;
-                finished = false;
                 salirBoton.SetActive(true);
-
+            }
+            else {
+                timeRemaining -= Time.deltaTime;
             }
         }
         if (respirar){
