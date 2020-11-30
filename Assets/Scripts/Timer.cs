@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        print(Time.time - tiempoInicial);
+        print(timeRemaining);
         if (Time.time - tiempoInicial >= tiemposIntercalados[0] & !finished){
             if (tiemposIntercalados.Count > 1){
                 tiempoInicial += tiemposIntercalados[0];
@@ -79,7 +79,7 @@ public class Timer : MonoBehaviour
                 }
                 if (centinela == true)
                 {
-                timeRemaining -= Time.deltaTime;
+                    timeRemaining -= Time.deltaTime;
                     if(timeRemaining<= maxTime-2)
                     {
                         inhalo = true;
@@ -96,7 +96,7 @@ public class Timer : MonoBehaviour
                 centinela = false;
                 changeSize();
 
-                if (timeRemaining <= 0.1f)
+                if (timeRemaining <= 1.5f)
                 {
                     inhalo = false;
                 }
