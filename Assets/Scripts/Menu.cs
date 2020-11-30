@@ -15,7 +15,7 @@ public class Menu : MonoBehaviour
     }
 
     public void SalirAlMenu(){
-        ChangeScene("MenuPrincipal");
+        SceneManager.LoadScene("MenuPrincipal");
     }
 
     public void OpenInfoPanel ()
