@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        print(timeRemaining);
+
         if (Time.time - tiempoInicial >= tiemposIntercalados[0] & !finished){
             if (tiemposIntercalados.Count > 1){
                 tiempoInicial += tiemposIntercalados[0];
@@ -61,6 +61,9 @@ public class Timer : MonoBehaviour
                 rateCrecimiento = Mathf.Abs(rateCrecimiento);
                 timeRemaining += Time.deltaTime;
                 contador.text = "Inhala";
+                if (Time.time - tiempoInicial + 2.0f >= tiemposIntercalados[0]){
+                    contador.text = "";
+                }
 
                changeSize();
             }
