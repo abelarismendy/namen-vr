@@ -4,7 +4,8 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     public GameObject panelInfo; 
-    public Button btn; 
+    public Button btn;
+    
     public void ChangeScene(string name) {
         SceneManager.LoadScene(name);
     }
